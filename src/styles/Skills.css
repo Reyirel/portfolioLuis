@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skill {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.tabs-demo * {
+    color: #fff;
+}
+
+/* Ajustes para el tab-content */
+.tab-content {
+    background-color: #1c64ad;
+    padding: 5%;
+    /* Ajusta el padding si necesitas más espacio dentro del div */
+    border-radius: 10px;
+    text-align: center;
+    height: 350px;
+    width: 600px;
+    display: flex;
+    /* Utiliza flex para alinear y justificar el contenido */
+    flex-direction: column;
+    /* Orientación del contenido */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+
+}
+
+.tab-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.tab-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* Orienta los ítems de la lista verticalmente */
+    align-items: center;
+    /* Centra los ítems de la lista */
+    justify-content: center;
+    width: 100%;
+    /* Asegura que la lista ocupe todo el ancho del div */
+    gap: 25px;
+}
+
+.tab-content ul li {
+    display: flex;
+    /* Mantiene los ítems en línea y permite mejor control de espaciado */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    /* Ajusta el espaciado vertical entre ítems */
+    font-weight: bold;
+    /* Aplica texto en negrita */
+    gap: 30px;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.tab-content ul li:hover{
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+
+}
+
+/* Estilo para los íconos */
+.tab-content ul li svg {
+    width: 60px;
+    /* Tamaño del ícono aumentado */
+    height: 60px;
+    /* Tamaño del ícono aumentado */
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    /* Suavizado para transformaciones y cambio de color */
+}
+
+/* Estilo para hover en los íconos */
+.tab-content ul li svg:hover {
+    color: #007bff;
+    /* Cambia al color que prefieras */
+    transform: scale(1.5);
+    /* Ligeramente más grande al hacer hover */
+}
+
+.no-visible-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width: 426px) {
+    .tab-content {
+        background-color: #1c64ad;
+        padding: 5%;
+        /* Ajusta el padding si necesitas más espacio dentro del div */
+        border-radius: 10px;
+        text-align: center;
+        height: 350px;
+        width: 550px;
+        display: flex;
+        /* Utiliza flex para alinear y justificar el contenido */
+        flex-direction: column;
+        /* Orientación del contenido */
+        justify-content: center;
+        /* Centra el contenido verticalmente */
+        align-items: center;
+        /* Centra el contenido horizontalmente */
+    }   
+    .tab-content ul li svg {
+        width: 50px;
+        /* Tamaño del ícono aumentado */
+        height: 50px;
+        /* Tamaño del ícono aumentado */
+        transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        /* Suavizado para transformaciones y cambio de color */
+    } 
+}
+
+/* Nuevo estilo para la pestaña activa en el elemento de navegación */
+nav .tab.active {
+    background-color: #007bff;
+}
+
+.tabs-demo .tab-title {
+    color: white;
+}
+
+.tabs-demo .tab-title:hover {
+    color: black;
+}
+
+.tabs-demo .tab-title.active {
+    color: black;
+}

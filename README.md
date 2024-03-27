@@ -20,20 +20,24 @@ Para clonar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 ```bash
 git clone https://github.com/Reyirel/portfolioLuis.git
+```
 
 2. Navega al directorio del proyecto:
 
 ```bash
 cd tu_repositorio
+```
 
 3. Instala las dependencias necesarias:
 
 ```bash
 npm install
+```
 
 4.Ejecuta el proyecto:
 
 ```bash
 npm start
+```
 
 

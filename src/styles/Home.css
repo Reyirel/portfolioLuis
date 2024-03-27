@@ -1,0 +1,183 @@
+section {
+    height: 93vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #000;
+}
+
+.sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.sobremi h1 {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.sobremi span {
+    color: #008CA1;
+}
+
+.sobremi p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.blob{
+    background: #008CA1;
+    width: 70%;
+    height: 65%;
+    background-image: url('../assets/image1.png');
+    background-size: cover;
+    background-position: center;
+    animation: blob 10s infinite ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes blob {
+    0%, 100%{
+        border-radius: 49% 18% 46% 15%/ 42% 23% 68% 20%;
+    }
+    50% {
+        border-radius: 12% 74% 19% 94%/ 70% 82% 76% 84%;
+    }
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 20px;
+    gap: 3rem;
+}
+
+.icono {
+    font-size: 2rem; /* Tamaño de los iconos */
+    color: #fff; /* Color de los iconos */
+    transition: transform 0.2s ease-in-out; /* Transición suave para el efecto de zoom */
+}
+
+.icono:hover {
+    transform: scale(1.4); /* Efecto de zoom al pasar el mouse */
+    color:#008CA1; /* Cambio de color al pasar el mouse */
+}
+@media (max-width: 1025px) {
+    .principal{
+        padding: 25px;
+    }
+    .sobremi h1{
+        font-size: 2.3rem;
+    }
+    .sobremi p{
+        font-size: 1.1rem;
+    }
+}
+/* Estilos para dispositivos pequeños */
+@media (max-width: 761px) {
+    html{
+        width: 100vw;
+    }
+    .navegacion ul.nav-menu {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        padding-top: 1rem;
+    }
+
+    .navegacion ul.nav-menu.open {
+        display: flex;
+    }
+
+    .navegacion ul.nav-menu li {
+        margin: 0.5rem 0;
+        font-size: 20px; /* Letras grandes para mejor visibilidad */
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 10px; /* Ajusta según tu diseño */
+        top: 10px; /* Ajusta según tu diseño */
+        z-index: 1001; /* Asegura que el botón esté sobre los otros elementos */
+    }
+}
+@media (max-width: 771px) {
+    .principal{
+        padding: 25px;
+    }
+    .sobremi h1{
+        font-size: 1.6rem;
+    }
+    .sobremi p{
+        font-size: 1.1rem;
+    }
+    .icono {
+        font-size: 1.5rem; /* Tamaño de los iconos */
+        color: #fff; /* Color de los iconos */
+        transition: transform 0.2s ease-in-out; /* Transición suave para el efecto de zoom */
+    }
+}
+@media (max-width: 650px) {
+}
+@media (max-width: 581px) {
+}
+@media (max-width: 531px) {
+}
+@media (max-width: 426px) {
+    .principal{
+        height: 150vh;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr; /* Establece el layout a una sola columna */
+        grid-template-rows: 1fr 1fr; /* Divide el contenido en dos filas */
+    }
+    .sobremi h1{
+        font-size: 2.5rem;
+    }
+    .sobremi p{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .icono {
+        font-size: 2.2rem; /* Tamaño de los iconos */
+        color: #fff; /* Color de los iconos */
+        transition: transform 0.2s ease-in-out; /* Transición suave para el efecto de zoom */
+    }
+    .blob{
+        height: 80%;
+        width: 80%;
+    }
+}
+@media (max-width: 376px) {
+    .principal{
+        height: 170vh;
+    }
+}
+@media (max-width: 321px) {
+    .principal{
+        height: 185vh;
+    }
+}
+
+
