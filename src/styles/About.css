@@ -6,6 +6,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    background-image: radial-gradient(circle, #051937, #14132c, #190e21, #180817, #12040d, #0e0308, #070103, #000000, #000000, #000000, #000000, #000000);
 }
 .about h2{
     font-size: 2.5rem;

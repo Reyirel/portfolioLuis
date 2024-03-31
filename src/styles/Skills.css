@@ -9,6 +9,8 @@
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
+    position: relative;
+    overflow: hidden;
 }
 
 .tabs-demo * {
@@ -67,7 +69,8 @@
     gap: 30px;
     transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-.tab-content ul li:hover{
+
+.tab-content ul li:hover {
     transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 
 }
@@ -99,6 +102,7 @@
 .no-visible-scrollbar::-webkit-scrollbar {
     display: none;
 }
+
 @media (max-width: 426px) {
     .tab-content {
         background-color: #1c64ad;
@@ -116,7 +120,8 @@
         /* Centra el contenido verticalmente */
         align-items: center;
         /* Centra el contenido horizontalmente */
-    }   
+    }
+
     .tab-content ul li svg {
         width: 50px;
         /* Tamaño del ícono aumentado */
@@ -124,7 +129,7 @@
         /* Tamaño del ícono aumentado */
         transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
         /* Suavizado para transformaciones y cambio de color */
-    } 
+    }
 }
 
 /* Nuevo estilo para la pestaña activa en el elemento de navegación */
@@ -142,4 +147,50 @@ nav .tab.active {
 
 .tabs-demo .tab-title.active {
     color: black;
+}
+
+.wave {
+    background: rgb(255 255 255);
+    border-radius: 1000% 1000% 0 0;
+    position: absolute;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
 }

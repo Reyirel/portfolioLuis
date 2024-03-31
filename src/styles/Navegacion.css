@@ -64,9 +64,9 @@ body {
 
 /* Estilos para dispositivos pequeños */
 @media (max-width: 761px) {
-    html{
+    /* html{
         width: 100vw;
-    }
+    } */
     .navegacion ul.nav-menu {
         flex-direction: column;
         display: none;
@@ -96,30 +96,30 @@ body {
     }
 }
 @media (max-width: 771px) {
-    html{
+    /* html{
         width: 100vw;
-    }
+    } */
 }
 
 @media (max-width: 650px) {
-    html{
+    /* html{
         width: 100vw;
-    }
+    } */
 }
 @media (max-width: 581px) {
-    html{
+    /* html{
         width: 105vw;
-    }
+    } */
 }
 @media (max-width: 531px) {
-    html{
+    /* html{
         width: 115vw;
-    }
+    } */
 }
 @media (max-width: 426px) {
-    html{
+    /* html{
         width: 145vw;
-    }
+    } */
     .navegacion ul.nav-menu {
         flex-direction: column;
         display: none;
@@ -132,9 +132,9 @@ body {
     }
 }
 @media (max-width: 376px) {
-    html{
+    /* html{
         width: 160vw;
-    }
+    } */
     .navegacion ul.nav-menu {
         flex-direction: column;
         display: none;
@@ -147,9 +147,9 @@ body {
     }
 }
 @media (max-width: 321px) {
-    html{
+    /* html{
         width: 180vw;
-    }
+    } */
     .navegacion ul.nav-menu {
         flex-direction: column;
         display: none;

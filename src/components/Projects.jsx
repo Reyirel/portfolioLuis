@@ -8,7 +8,7 @@ import recetario from '../assets/recetario.jpg';
 
 const Projects = () => {
     return (
-        <div>
+        <>
             <div className='general'>
             <h1>Proyectos</h1>
                 {/* Tarjeta para el Proyecto 1 */}
@@ -47,7 +47,7 @@ const Projects = () => {
                     codeUrl="https://github.com/Reyirel/CocinaCode-Hackathon-IEEE.git"
                 />
             </div>
-        </div>
+        </>
     );
 };
 

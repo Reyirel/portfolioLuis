@@ -7,11 +7,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+    background-image: linear-gradient(to bottom, #ffffff, #cacaca, #979797, #676767, #3b3b3b, #292929, #181818, #000000, #000000, #000000, #000000, #000000);}
 .general h1{
     font-size: 2.1rem;
     font-weight: bold;
     text-align: center;
+    color: #000000;
 }
 .card-enter{
     width: 40%;
@@ -40,4 +41,24 @@
         align-items: center;
         justify-content: space-between;
     }
+}
+
+.tajeta{
+    background-color: #ffff ;
+    box-shadow: 0 0 10px #0000005a;
+}
+
+.tajeta:hover{
+
+}
+.tajeta p{
+    color: #000000;
+}
+
+.tajeta a{
+    color: #000;
+}
+
+.tajeta a:hover{
+    color: #1c64ad;
 }
